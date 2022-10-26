@@ -1,14 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package models;
 
-/**
- *
- * @author Shenron
- */
 public class Role {
-    
+    String systemAdmin;
+    String regularUser;
+
+    public void setSystemAdmin(String systemAdmin) {
+        this.systemAdmin = systemAdmin;
+    }
+
+    public void setRegularUser(String regularUser) {
+        this.regularUser = regularUser;
+    }
+
+    public String getSystemAdmin() {
+        return systemAdmin;
+    }
+
+    public String getRegularUser() {
+        return regularUser;
+    }
 }
