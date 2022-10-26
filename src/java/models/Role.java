@@ -1,23 +1,31 @@
-
 package models;
+import java.io.Serializable;
 
-public class Role {
-    String systemAdmin;
-    String regularUser;
+public class Role implements Serializable{
+    private int roleID;
+    private String roleName;
 
-    public void setSystemAdmin(String systemAdmin) {
-        this.systemAdmin = systemAdmin;
+    public Role() {
+        
     }
-
-    public void setRegularUser(String regularUser) {
-        this.regularUser = regularUser;
+    public Role (int roleID, String roleName){
+        this.roleID = roleID;
+        this.roleName = roleName;
     }
-
-    public String getSystemAdmin() {
-        return systemAdmin;
+    
+    public int getRoleID(){
+        return roleID;
     }
-
-    public String getRegularUser() {
-        return regularUser;
+    
+    public void setRoleID(){
+        this.roleID = roleID;
+    }
+    
+    public String getRole(){
+        return roleName;
+    }
+    
+    public void setRole(String roleName){
+        this.roleName = roleName;
     }
 }

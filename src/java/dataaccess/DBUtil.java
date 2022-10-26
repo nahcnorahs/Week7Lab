@@ -4,7 +4,7 @@ import java.sql.*;
 
 /**
  *
- * @author Shenron
+ * @author Sharon
  */
 public class DBUtil {
     public static void closePreparedStatement(Statement ps){
